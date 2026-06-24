@@ -151,36 +151,36 @@
     display: inline-flex;
     align-items: center;
     gap: 22px;
-    padding: 20px 34px 20px 26px;
+    padding: 28px 48px 28px 36px;
     background: linear-gradient(135deg, rgba(245,200,66,0.10), rgba(58,138,140,0.08));
     border: 1px solid rgba(167,196,63,0.35);
-    border-radius: 10px;
+    border-radius: 12px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 40px rgba(111,174,90,0.12), 0 8px 24px rgba(0,0,0,0.25);
+    box-shadow: 0 0 50px rgba(111,174,90,0.14), 0 10px 28px rgba(0,0,0,0.25);
     animation: glow 4s ease-in-out infinite;
   }
   .visitor-welcome::before {
     content: '';
     position: absolute;
     left: 0; top: 0; bottom: 0;
-    width: 4px;
+    width: 5px;
     background: linear-gradient(180deg, var(--gold), var(--green), var(--teal));
   }
   @keyframes glow {
-    0%, 100% { box-shadow: 0 0 40px rgba(111,174,90,0.12), 0 8px 24px rgba(0,0,0,0.25); }
-    50%      { box-shadow: 0 0 56px rgba(111,174,90,0.22), 0 8px 24px rgba(0,0,0,0.25); }
+    0%, 100% { box-shadow: 0 0 50px rgba(111,174,90,0.14), 0 10px 28px rgba(0,0,0,0.25); }
+    50%      { box-shadow: 0 0 70px rgba(111,174,90,0.26), 0 10px 28px rgba(0,0,0,0.25); }
   }
   .visitor-welcome .label {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--ink-faint);
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .visitor-welcome .name {
-    font-size: 44px;
+    font-size: 68px;
     font-weight: 600;
     letter-spacing: 0.005em;
     background: linear-gradient(100deg, var(--gold) 0%, var(--green) 50%, var(--teal) 100%);
