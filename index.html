@@ -149,49 +149,6 @@
     color: var(--ink-faint);
     letter-spacing: 0.08em;
   }
-  .visitor-welcome {
-    margin-top: 40px;
-    display: inline-flex;
-    align-items: center;
-    gap: 30px;
-    padding: 38px 64px 38px 46px;
-    background: linear-gradient(135deg, rgba(245,200,66,0.10), rgba(58,138,140,0.08));
-    border: 1px solid rgba(167,196,63,0.35);
-    border-radius: 16px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 60px rgba(111,174,90,0.16), 0 12px 32px rgba(0,0,0,0.25);
-    animation: glow 4s ease-in-out infinite;
-  }
-  .visitor-welcome::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 7px;
-    background: linear-gradient(180deg, var(--gold), var(--green), var(--teal));
-  }
-  @keyframes glow {
-    0%, 100% { box-shadow: 0 0 60px rgba(111,174,90,0.16), 0 12px 32px rgba(0,0,0,0.25); }
-    50%      { box-shadow: 0 0 84px rgba(111,174,90,0.30), 0 12px 32px rgba(0,0,0,0.25); }
-  }
-  .visitor-welcome .label {
-    font-size: 22px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .visitor-welcome .name {
-    font-size: 118px;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: 0;
-    background: linear-gradient(100deg, var(--gold) 0%, var(--green) 50%, var(--teal) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 
   .footer {
     position: absolute;
@@ -274,12 +231,6 @@
     <div class="clockrow">
       <span class="clock" id="clock">--:--</span>
       <span class="ampm" id="ampm">--</span>
-    </div>
-    <div class="visitor-welcome">
-      <div>
-        <div class="label">Welcoming today</div>
-        <div class="name">Surveil</div>
-      </div>
     </div>
   </div>
 
